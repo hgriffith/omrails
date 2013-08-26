@@ -1,7 +1,27 @@
-body {
-  padding: 60px;
+$navbarBackgroundHighlight: white;
+$navbarBackground: white;
+$btnPrimaryBackground: purple;
+
+@import 'bootstrap';
+body{
+    padding-top: 60px;
 }
 
-h1 {
-  color: #719d31;
+@import 'bootstrap-responsive';
+
+.navbar-inner{
+    @include box-shadow(none !important);
+    border: 0;
+}
+
+.navbar-inner {
+  background: #e1e1e1;
+}
+
+.footer{
+    margin-top: 50px;
+    color: $grayLight;
+    a{
+        color: $gray;
+    }
 }
